@@ -1,0 +1,84 @@
+{
+  "expenses": [
+    {
+      "id": 1,
+      "title": "Market",
+      "amount": 35,
+      "category": "Food",
+      "icon": "ShoppingCart",
+      "date": "2026-11-06"
+    },
+    {
+      "id": 2,
+      "title": "Internet",
+      "amount": 25,
+      "category": "Bills",
+      "icon": "Wifi",
+      "date": "2026-11-05"
+    },
+    {
+      "id": 3,
+      "title": "Coffee",
+      "amount": 8,
+      "category": "Food",
+      "icon": "Coffee",
+      "date": "2026-11-04"
+    },
+    {
+      "id": 4,
+      "title": "Transport",
+      "amount": 12,
+      "category": "Transport",
+      "icon": "Bus",
+      "date": "2026-11-03"
+    },
+    {
+      "id": 5,
+      "title": "Sport Zalı",
+      "amount": 45,
+      "category": "Health",
+      "icon": "Dumbbell",
+      "date": "2026-11-02"
+    },
+    {
+      "id": 6,
+      "title": "Kino Biletləri",
+      "amount": 18,
+      "category": "Entertainment",
+      "icon": "Film",
+      "date": "2026-11-01"
+    },
+    {
+      "id": 7,
+      "title": "Yanacaq",
+      "amount": 40,
+      "category": "Transport",
+      "icon": "Fuel",
+      "date": "2026-10-30"
+    },
+    {
+      "id": 8,
+      "title": "Geyim",
+      "amount": 65,
+      "category": "Shopping",
+      "icon": "Shirt",
+      "date": "2026-10-28"
+    },
+    {
+      "id": 9,
+      "title": "Aptek",
+      "amount": 15,
+      "category": "Health",
+      "icon": "Pill",
+      "date": "2026-10-25"
+    },
+    {
+      "id": 10,
+      "title": "Restoran",
+      "amount": 52,
+      "category": "Food",
+      "icon": "Utensils",
+      "date": "2026-10-22"
+    }
+  ]
+}
