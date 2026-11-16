@@ -80,5 +80,10 @@
       "icon": "Utensils",
       "date": "2026-10-22"
     }
+  ],
+    "categories": [
+    { "id": 1, "name": "Food" },
+    { "id": 2, "name": "Bills" },
+    { "id": 3, "name": "Transport" }
   ]
 }

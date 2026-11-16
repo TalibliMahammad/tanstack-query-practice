@@ -25,4 +25,35 @@ export async function getExpensesById(id:number): Promise<Expense> {
 
 }
 
+export async function getExpensesCategory(category:string):Promise<Expense[]>{
+
+  const responseCategory = await fetch(`${API_URL}/expenses?category=${category}`)
+
+  if(!responseCategory.ok) throw new Error("category is not")
+
+    const data:Expense[] =await responseCategory.json();
+
+    return data;
+
+
+}
+
+export async function getExpensePage(page:number):Promise<Expense[]>{
+  const response = await fetch(`${API_URL}/expenses?_page=${page}&_limit=2`)
+
+  if(!response.ok) throw new Error ("server Error")
+
+
+
+    const data: Expense[]= await response.json();
+
+
+    return data;
+}
+
+
+
+
+
+
 
