@@ -1,89 +1,74 @@
 {
   "expenses": [
     {
-      "id": 1,
-      "title": "Market",
-      "amount": 35,
-      "category": "Food",
-      "icon": "ShoppingCart",
-      "date": "2026-11-06"
-    },
-    {
-      "id": 2,
-      "title": "Internet",
-      "amount": 25,
-      "category": "Bills",
-      "icon": "Wifi",
-      "date": "2026-11-05"
-    },
-    {
-      "id": 3,
-      "title": "Coffee",
-      "amount": 8,
-      "category": "Food",
-      "icon": "Coffee",
-      "date": "2026-11-04"
-    },
-    {
-      "id": 4,
-      "title": "Transport",
-      "amount": 12,
+      "id": 12,
+      "title": "Avtobus",
+      "amount": 2,
       "category": "Transport",
       "icon": "Bus",
-      "date": "2026-11-03"
+      "date": "2026-10-23"
     },
     {
-      "id": 5,
-      "title": "Sport Zalı",
-      "amount": 45,
-      "category": "Health",
-      "icon": "Dumbbell",
-      "date": "2026-11-02"
-    },
-    {
-      "id": 6,
-      "title": "Kino Biletləri",
-      "amount": 18,
+      "id": 13,
+      "title": "Netflix",
+      "amount": 15,
       "category": "Entertainment",
-      "icon": "Film",
-      "date": "2026-11-01"
+      "icon": "Tv",
+      "date": "2026-10-24"
     },
     {
-      "id": 7,
+      "id": 14,
       "title": "Yanacaq",
-      "amount": 40,
+      "amount": 60,
       "category": "Transport",
       "icon": "Fuel",
-      "date": "2026-10-30"
+      "date": "2026-10-24"
     },
     {
-      "id": 8,
-      "title": "Geyim",
-      "amount": 65,
-      "category": "Shopping",
-      "icon": "Shirt",
-      "date": "2026-10-28"
-    },
-    {
-      "id": 9,
-      "title": "Aptek",
-      "amount": 15,
-      "category": "Health",
-      "icon": "Pill",
+      "id": 15,
+      "title": "Kitab",
+      "amount": 28,
+      "category": "Education",
+      "icon": "BookOpen",
       "date": "2026-10-25"
     },
     {
-      "id": 10,
-      "title": "Restoran",
-      "amount": 52,
-      "category": "Food",
-      "icon": "Utensils",
-      "date": "2026-10-22"
+      "id": 17,
+      "title": "İnternet",
+      "amount": 30,
+      "category": "Bills",
+      "icon": "Wifi",
+      "date": "2026-10-26"
+    },
+    {
+      "id": 19,
+      "title": "Geyim",
+      "amount": 120,
+      "category": "Shopping",
+      "icon": "Shirt",
+      "date": "2026-10-27"
+    },
+    {
+      "id": 20,
+      "title": "Aptek",
+      "amount": 18,
+      "category": "Health",
+      "icon": "Pill",
+      "date": "2026-10-27"
     }
   ],
-    "categories": [
-    { "id": 1, "name": "Food" },
-    { "id": 2, "name": "Bills" },
-    { "id": 3, "name": "Transport" }
+  "categories": [
+    {
+      "id": 1,
+      "name": "Food"
+    },
+    {
+      "id": 2,
+      "name": "Bills"
+    },
+    {
+      "id": 3,
+      "name": "Transport"
+    }
   ]
 }

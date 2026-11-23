@@ -8,4 +8,10 @@ export type Expense ={
     amount:number;
     category:string;
     date:string;
+    pages?:number
 };
+
+
+export type NewExpense = Omit<Expense, "id">
+
+export type UpdateExpense = Partial<Omit<Expense, "id">>;
