@@ -105,3 +105,21 @@ export async function deleteExpense(id: number): Promise<Expense> {
 
   return data;
 }
+
+
+export async function getProduct(id:number):Promise<Expense>{
+
+ const response = await fetch(`${API_URL}/expense/${id}`)
+
+
+   if (!response.ok) {
+    throw new Error("Expenses could not be loaded");
+  }
+
+  const data: Expense = await response.json();
+
+  return data;
+
+
+
+}

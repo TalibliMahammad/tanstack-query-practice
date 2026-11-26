@@ -18,6 +18,7 @@ import { getCategories } from "./api/categories";
 import { useState } from "react";
 import type { Expense, NewExpense, UpdateExpense } from "./types/expense";
 import { toast, ToastContainer } from "react-toastify";
+import ExpenseDetail from "./api/components/ExpenseDetail";
 
 type updateMutationVaribles = {
   id: number;
@@ -31,7 +32,7 @@ function App() {
     title: "",
     category: "",
   });
-
+const [showHoverDetail, setShowHoverDetail] = useState<number | null>(null)
   const queryClient = useQueryClient();
 
   const { data, isPending, isError, error, isFetching } = useQuery({
@@ -81,9 +82,10 @@ function App() {
     },
 
     onError: (error) => {
-      console.log("Server Error", error.message);
+      console.log("Server Error", error.message);     
     },
   });
+
 
   const useDeleteMutation = () => {
     const queryClient = useQueryClient();
@@ -132,9 +134,13 @@ function App() {
         }
       },
     });
+
   };
 
+
+
   const DeleteMutation = useDeleteMutation();
+
 
   // const Product = {
   //   title: "Book",
@@ -179,7 +185,10 @@ function App() {
                 </p>
               </div>
 
-              <div className="flex flex-col gap-3">
+              <div 
+              onMouseEnter={()=>setShowHoverDetail(item.id)}
+              onMouseLeave={()=>setShowHoverDetail(null)}
+              className="flex flex-col gap-3">
                 <label className="text-xs font-medium text-slate-400">
                   Yeni məbləğ daxil edin
                 </label>
@@ -237,6 +246,10 @@ function App() {
                 >
                   Delete
                 </button>
+
+              { showHoverDetail === item.id && (
+                 <ExpenseDetail expenseId={item.id}  />
+              )} 
               </div>
             </div>
           ))}
